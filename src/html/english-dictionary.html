@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/english-dictionary.css">
+    <title>English Dictionary</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="english-dictionary.html">Dictionary</a></li>
+                    <li><a href="dinosaur-game.html">Dinosaur Game</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="heading">
+            English Dictionary
+        </h1>
+        <input type="text" id="input" placeholder="Search for a word">
+        <p class="info-text" id="info-text">Type a word and press Enter.</p>
+        <div class="meaning-container" id="meaning-container">
+            <p>Word:
+                <span class="word" id="word">___</span>
+            </p>
+            <p>Meaning:
+                <span class="meaning" id="meaning">___</span>
+            </p>
+            <audio src="" controls id="audio"></audio>
+        </div>
+    </div>
+    <script src="../js/english-dictionary.js"></script>
+</body>
+</html>
