@@ -1,9 +1,9 @@
-const inputElement = document.getElementById("input");
-const infoTextElement = document.getElementById("info-text");
-const meaningContainer = document.getElementById("meaning-container");
-const wordElement = document.getElementById("word");
-const meaningElement = document.getElementById("meaning");
-const audioElement = document.getElementById("audio");
+const inputElement = document.querySelector("[word-input]");
+const infoTextElement = document.querySelector("[info-text]");
+const meaningContainer = document.querySelector("[meaning-container]");
+const wordElement = document.querySelector("[word-result]");
+const meaningElement = document.querySelector("[meaning-result]");
+const audioElement = document.querySelector("[audio-result]");
 
 
 inputElement.addEventListener("keyup", (e) => {
@@ -37,6 +37,7 @@ async function fetchAPI(word) {
                     audioElement.src = phonetic["audio"];
                     return;
                 }
+                audioElement.style.display = "none";
             });
         }
     } catch (error) {

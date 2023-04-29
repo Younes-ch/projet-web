@@ -14,6 +14,7 @@
                 <ul>
                     <li><a href="english-dictionary.html">Dictionary</a></li>
                     <li><a href="dinosaur-game.html">Dinosaur Game</a></li>
+                    <li><a href="snake-game.html">Snake Game</a></li>
                 </ul>
             </div>
         </nav>
@@ -22,16 +23,16 @@
         <h1 class="heading">
             English Dictionary
         </h1>
-        <input type="text" id="input" placeholder="Search for a word">
-        <p class="info-text" id="info-text">Type a word and press Enter.</p>
-        <div class="meaning-container" id="meaning-container">
+        <input type="text" class="input" placeholder="Search for a word" word-input>
+        <p class="info-text" info-text>Type a word and press Enter.</p>
+        <div class="meaning-container" meaning-container>
             <p>Word:
-                <span class="word" id="word">___</span>
+                <span class="word" word-result>___</span>
             </p>
             <p>Meaning:
-                <span class="meaning" id="meaning">___</span>
+                <span class="meaning-result" meaning-result>___</span>
             </p>
-            <audio src="" controls id="audio"></audio>
+            <audio src="" controls class="audio" audio-result></audio>
         </div>
     </div>
     <script src="../js/english-dictionary.js"></script>

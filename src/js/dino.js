@@ -14,6 +14,7 @@ import {
   let dinoFrame
   let currentFrameTime
   let yVelocity
+  
   export function setupDino() {
     isJumping = false
     dinoFrame = 0

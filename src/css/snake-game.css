@@ -1,0 +1,83 @@
+body {
+    background-color: salmon;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-bar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000d7;
+    z-index: 1;
+}
+
+.nav-links  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.5em;
+    color: salmon;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    background-color: salmon;
+    color: #333;
+    border-radius: 0.5em;
+}
+
+.board {
+    margin-top: 20vh;
+    border-radius: 0.5em;
+    box-shadow: 0 0 5px 5px #000000d7;
+}
+
+.game-over {
+    color: salmon;
+    position: absolute;
+    font-size: 5vmin;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.restart-button {
+    background-color: #000000d7;
+    position: absolute;
+    font-size: 3vmin;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.25em;
+    color: salmon;
+    border: none;
+    padding: 0.25em;
+}
+
+.restart-button:hover {
+    background-color: salmon;
+    color: #000000d7;
+    border-radius: 0.25em;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
