@@ -44,10 +44,10 @@ window.onload = function() {
 function update() {
     if (gameOver)
         return;
-    context.fillStyle = "#000000d7";
+    context.fillStyle = "#a33232";
     context.fillRect(0, 0, board.width, board.height);
 
-    context.fillStyle = "sandybrown";
+    context.fillStyle = "#ffffff";
     snakeX += velocityX * boxSize;
     snakeY += velocityY * boxSize;
     context.fillRect(snakeX, snakeY, boxSize, boxSize);
@@ -65,10 +65,10 @@ function update() {
         snake[0] = [snakeX, snakeY];
     }
 
-    context.fillStyle = "#fc4c4e";
+    context.fillStyle = "sandybrown";
     context.fillRect(foodX, foodY, boxSize, boxSize);
 
-    context.fillStyle = "sandybrown";
+    context.fillStyle = "white";
     
     for(let i = 0; i < snake.length; i++) {
         context.fillRect(snake[i][0], snake[i][1], boxSize, boxSize);
