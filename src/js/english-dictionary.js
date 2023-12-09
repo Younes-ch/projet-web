@@ -32,9 +32,10 @@ async function fetchAPI(word) {
             wordElement.innerHTML = data[0]["word"];
             meaningElement.innerHTML = data[0]["meanings"][0]["definitions"][0]["definition"];
             audioElement.style.display = "inline-flex";
-            data[0]["phonetics"].forEach(phonetic => {
+            data[0]["phonetics"].every(phonetic => {
                 if(phonetic["audio"]) {
                     audioElement.src = phonetic["audio"];
+                    console.log(phonetic["audio"]);
                     return;
                 }
                 audioElement.style.display = "none";
